@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Router>
+        <Router basename="/react">
           <div>
             {Header()}
             {Content()}
@@ -21,7 +21,8 @@ export default class App extends React.Component {
 
 const Header = () => (
   <header>
-    <Link to="/"> HOME </Link>
+    <Link to="/"> HOME LAB </Link><br/>
+    <a href="https://matteobarone.github.io"> &lt; back to portfolio  </a>
   </header>
 );
 
