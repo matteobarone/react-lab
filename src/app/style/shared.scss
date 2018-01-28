@@ -34,10 +34,21 @@ ul {
   };
 }
 
-
 button {
   appearance: none;
   min-width: 100px;
   padding: 10px;
   margin: 5px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
 }

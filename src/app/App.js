@@ -21,8 +21,9 @@ export default class App extends React.Component {
 
 const Header = () => (
   <header>
-    <Link to="/"> HOME LAB </Link><br/>
-    <a href="https://matteobarone.github.io"> &lt; back to portfolio  </a>
+    <Link className="left" to="/"> HOME LAB </Link>
+    <a className="right" href="/"> back to portfolio  </a>
+    <div className="clear" />
   </header>
 );
 
