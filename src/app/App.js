@@ -63,7 +63,6 @@ const Counter = ({value, onIncrement, onDecrement}) => (
 );
 
 const counterReducer = (state = 0, action) => {
-  console.log(store.getState());
   switch (action.type) {
     case 'INCREMENT': return state + 1;
     case 'DECREMENT': return state - 1;
