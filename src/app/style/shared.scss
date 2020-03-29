@@ -47,11 +47,13 @@ a {
   }
 }
 
-ul {
-  padding: 0;
-  li {
-    list-style-type: none;
-  };
+ul li {
+  list-style-type: none;
+  margin: var(--gap-sm) 0;
+}
+
+ol li {
+  margin: var(--gap-sm) 0;
 }
 
 button {
