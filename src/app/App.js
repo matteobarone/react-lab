@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 import Todo from './todo/todo';
 import Chrono from './chrono/chrono';
 import './App.css';
+import Covid19 from './Covid19/Covid19';
 
 export const App = () => {
   ReactDOM.render(
@@ -31,6 +32,7 @@ const Header = () => (
 const Content = () => (
   <main>
     <Route exact={true} path="/" component={Home}/>
+    <Route path="/covid-19" component={Covid19}/>
     <Route path="/todo" component={Todo}/>
     <Route path="/chronometer" component={Chrono}/>
     <Route path="/redux-counter" render={() => (
@@ -47,6 +49,7 @@ const Home = () => (
   <div>
     <h1>REACT LAB</h1>
     <ol>
+      <li><Link to="/covid-19"> Covid-19 </Link></li>
       <li><Link to="/todo"> Todos </Link></li>
       <li><Link to="/chronometer"> Chronometer </Link></li>
       <li><Link to="/redux-counter"> Redux counter </Link></li>

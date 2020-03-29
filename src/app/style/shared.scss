@@ -1,9 +1,28 @@
 @import 'variables.scss';
 
-body {
+:root {
+  --gap-sm: 10px;
+  --gap-md: 20px;
+  --gap-lg: 50px;
+  
+  --font-size-sm: 13px;
+  
+  --neutral-dark-color: #2c2c2c;
+  --neutral-color: #aaa;
+}
+
+@media(max-width: 600px) {
+  :root {
+    --gap-lg: 30px;
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+  
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -17,6 +36,7 @@ main {
 
 h1 {
   text-align: center;
+  margin: var(--gap-sm) 0;
 }
 
 a {

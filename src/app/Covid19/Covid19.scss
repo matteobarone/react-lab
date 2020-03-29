@@ -1,0 +1,31 @@
+.Covid19 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--gap-sm);
+}
+
+.Covid19__last-update {
+  align-self: flex-end;
+  font-size: var(--font-size-sm);
+  color: var(--neutral-color);
+}
+
+.Covid19__blocks {
+  width: 100%;
+  padding: var(--gap-lg) 0;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 600px) {
+  .Covid19__blocks {
+    flex-direction: column;
+    padding-top: 0;
+  }
+}

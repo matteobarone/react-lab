@@ -1,0 +1,20 @@
+.Block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--gap-md);
+  border: 1px solid var(--neutral-dark-color);
+}
+
+.Block h2 {
+  padding-bottom: var(--gap-sm);
+}
+
+@media(max-width: 600px) {
+  .Block {
+    margin: var(--gap-md);
+    width: 100%;
+  }
+}
