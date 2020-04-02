@@ -31,7 +31,7 @@ class Covid19 extends React.Component {
       return {
         name: date,
         total: day.totale_casi,
-        positive: day.totale_attualmente_positivi,
+        positive: day.totale_positivi,
         recovered: day.dimessi_guariti,
         deaths: day.deceduti
       };
@@ -42,8 +42,8 @@ class Covid19 extends React.Component {
     const yesterday = res[res.length - 2];
     const today = res[res.length - 1];
 
-    const positive = today.totale_attualmente_positivi;
-    const newPositive = today.nuovi_attualmente_positivi;
+    const positive = today.totale_positivi;
+    const newPositive = today.variazione_totale_positivi;
     const positiveDelta = ((newPositive / positive) * 100).toFixed(2);
 
     const recovered = today.dimessi_guariti;
